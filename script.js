@@ -9,16 +9,6 @@ const finalModal = document.getElementById("finalModal");
 const closeFinal = document.getElementById("closeFinal");
 const instructions = document.getElementById("instructions");
 
-const queryString = window.location.search;
-
-const parametro = new URLSearchParams(queryString);
-
-const nombre = parametro.get("n"); 
-
-function primeraLetraEnMayusculas(str) {
-  return str.charAt(0).toUpperCase() + str.slice(1);
-}
-
 const MAX_FLOWERS = 10;
 const MAX_PARTICLES = 36;
 let activeParticles = 0;
@@ -29,7 +19,7 @@ let typingTimer = null;
 
 /* Mensaje (ahora más lento y con pausas más largas) */
 const messageLines = [
-  `${nombre ? primeraLetraEnMayusculas(nombre) :  'Cariño'}, no te traje flores amarillas.
+  `Audimar, no te traje flores amarillas.
   No porque no las valore, sino porque se que al final se marchitan y dejan un espacio vacío en el florero.`,
 
   `Lo que sostienes ahora no busca reemplazar nada, sino recordarte algo: lo verdadero no se mide en colores,
