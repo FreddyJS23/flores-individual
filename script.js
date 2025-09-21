@@ -19,10 +19,10 @@ let typingTimer = null;
 
 /* Mensaje (ahora más lento y con pausas más largas) */
 const messageLines = [
-  `${userName}, No tengo la fuerza monetaria para comprarte lo que mereces, pero sí tengo virtudes, tiempo y ganas de dar lo mejor de mí. Este detalle nace de eso: esfuerzo honesto, muchas intenciones y la esperanza de sacarte una sonrisa.`,
+  `Audimar, No tengo la fuerza monetaria para comprarte lo que mereces, pero sí tengo virtudes, tiempo y ganas de dar lo mejor de mí. Este detalle nace de eso: esfuerzo honesto, muchas intenciones y la esperanza de sacarte una sonrisa.`,
   `Es solo un pequeño regalo, una muestra de Cariño porque te lo mereces. Que estas flores sirvan como recordatorio de que las pequeñas cosas son lo que nos hacen felices y un  simple gesto puede tener un gran valor si se da con el corazón.`,
   `No pretendo prometer lo imposible;Si algo vale más que el precio, es la intención con la que se da.`,
-  `Con cariño para ti, sin más drama y con todo el aprecio posible. Porque Edwin  te quiere mucho.`
+  `Con cariño para ti, sin más drama y con todo el aprecio posible. Porque Edwin te quiere mucho.`
 ];
 
 /* ------------- Inicio ------------- */
