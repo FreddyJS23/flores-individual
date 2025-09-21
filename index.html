@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+        }
+        h1 {
+            color: #ff6b6b;
+            margin-bottom: 1rem;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #ff6b6b;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #ff8787;
+        }
+        .heart {
+            font-size: 50px;
+            color: #ff6b6b;
+            animation: pulse 1s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <title>Mensaje Especial</title>
+</head>
+<body>
+    <div class="container">
+        <div class="heart">❤️</div>
+        <h1>Un mensaje especial para ti</h1>
+        <p>Por favor, ingresa tu nombre para recibir una sorpresa llena de cariño:</p>
+        <input type="text" id="nameInput" placeholder="Escribe tu nombre aquí">
+        <button onclick="showFlowers()">Descubrir la sorpresa</button>
+    </div>
+    <script>
+        function showFlowers() {
+            const name = document.getElementById('nameInput').value;
+            if (name) {
+                localStorage.setItem('userName', name);
+                window.location.href = 'index2.html';
+            } else {
+                alert('Por favor, ingresa tu nombre para continuar.');
+            }
+        }
+    </script>
+</body>
+</html>
